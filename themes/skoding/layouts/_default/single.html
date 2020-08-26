@@ -1,5 +1,23 @@
 {{ define "main" }}
+    
+    {{if isset .Params "featured_image"}}
+    <img src="{{ .Params.featured_image }}" alt="" width="200">
+    <hr>
+    {{ end }}
+
+    
     <h1>{{ .Title }}</h1>
     <div>{{ .Content }} </div>
     <span> Dibuat pada: {{.Date.Format "2006-01-02"}}  </span>
+
+    <hr>
+    {{ with .Params.tags }}
+        <ul>
+            Tag:
+            {{range .}}
+                <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+            {{end}}
+        </ul>
+    {{ end }}
+
 {{ end }}

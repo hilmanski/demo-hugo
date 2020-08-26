@@ -2,3 +2,5 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Sekolah Koding Millenial"
 theme = "skoding"
+[params]
+    Description = "tempat belajar koding"

@@ -1,6 +1,8 @@
-baseURL = "https://demo-hugo.onrender.com"
+baseURL = "example.com"
 languageCode = "en-us"
 title = "Sekolah Koding Millenial"
 theme = "skoding"
+summaryLength = 10
+paginate = 2
 [params]
     Description = "tempat belajar koding"

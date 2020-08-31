@@ -6,6 +6,7 @@
         {{ range where .Site.RegularPages "Section" "blog" }}
         <li>
             <a href="{{.Permalink}}"> {{.Title}}</a>
+            <p> {{ or .Params.description .Summary }} </p>
             <span>Dibuat {{.Date.Format "2006-01-02"}}  </span>
         </li>
         {{ end }}

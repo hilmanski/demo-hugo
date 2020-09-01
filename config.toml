@@ -1,4 +1,4 @@
-baseURL = "example.com"
+baseURL = "https://hugo-demo-b7su.onrender.com/"
 languageCode = "en-us"
 title = "Sekolah Koding Millenial"
 theme = "skoding"
